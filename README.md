@@ -7,173 +7,206 @@
 | **Kelas**       | TI.23.A.5           |
 | **Mata Kuliah** | Pemrograman Website |
 
-# Kuliner Nusantara - Website Kuliner Tradisional Indonesia
+# Website Kuliner Nusantara
 
-Selamat datang di repositori Kuliner Nusantara! Proyek ini adalah sebuah website yang menampilkan kekayaan kuliner tradisional Indonesia dengan gaya desain terinspirasi dari Netflix. Website ini dibangun menggunakan PHP dan MySQL untuk backend, serta HTML, CSS, dan JavaScript untuk frontend.
+Selamat Datang di sebuah website yang didedikasikan untuk melestarikan dan memperkenalkan kekayaan kuliner tradisional Indonesia. Website ini bertujuan untuk mendokumentasikan dan membagikan warisan kuliner nusantara yang tak ternilai, membantu generasi muda dan dunia mengenal keberagaman masakan tradisional Indonesia dengan gaya desain yang terinspirasi dari spotify.
 
-## Struktur Proyek
+## Deskripsi Project
+Project ini merupakan implementasi dari mata kuliah Pemrograman Web 1, dengan fokus pada pengembangan website dinamis menggunakan HTML, CSS, JavaScript, PHP, dan MySQL. Website ini menampilkan koleksi lengkap makanan dan minuman tradisional dari berbagai daerah di Indonesia.
 
-Berikut adalah penjelasan detail untuk setiap halaman utama dalam proyek ini:
+## Tampilan Website
 
-### 1. Halaman Utama
-
+### 1. Halaman Home (Landing Page)
 ![alt text](images/tampilan/home.png)
 ![alt text](images/tampilan/home-1.png)
+- **Header Section**
+  - Logo Kuliner Nusantara di pojok kiri atas
+  - Navigation bar dengan menu Home, Makanan, Minuman, About, dan Contact
+  - Desain responsive yang menyesuaikan dengan ukuran layar
+  
+- **Hero Section**
+  - Judul utama "KULINER NUSANTARA"
+  - Tagline: "Temukan cita rasa autentik Indonesia melalui koleksi makanan dan minuman tradisional yang menggugah selera, menjelajahi keragaman budaya dari barat ke timur nusantara."
+  - Dua tombol CTA (Call-to-Action):
+    1. "JELAJAHI" - untuk langsung melihat koleksi makanan
+    2. "INFO LEBIH LANJUT" - mengarah ke halaman About
+  - Background dengan efek overlay berwarna ungu gelap dan gambar makanan
 
-
-Halaman utama website menampilkan tampilan yang menarik dengan gaya Netflix, termasuk:
-
-- **Hero Section**:
-
-  - Menggunakan gambar latar belakang makanan Indonesia
-  - Gradient overlay untuk meningkatkan keterbacaan teks
-  - Judul utama menggunakan font 'Bebas Neue' dengan ukuran besar (5rem)
-  - Deskripsi singkat dengan bayangan teks untuk kontras
-
-
-- **Slider Konten**:
-
-  - Untuk makanan dan minuman tradisional
-  - Menggunakan `overflow-x: auto` dengan scrollbar tersembunyi
-  - Efek hover pada kartu konten (scale dan box-shadow)
-
-- **Grid Kategori**:
-  - Menampilkan berbagai kategori kuliner dalam format grid responsif
-
-Fitur CSS utama:
-
-- Penggunaan variabel CSS untuk konsistensi warna
-- Flexbox dan Grid untuk layout
-- Media queries untuk responsivitas
-- Animasi hover menggunakan transition
-
-### 2. Halaman About Me
-
-![alt text](images/tampilan/about.png)
-
-
-Halaman ini memberikan informasi tentang Kuliner Nusantara, dengan fitur:
-
-- **Hero Section**:
-
-  - Background image dengan overlay gradient
-  - Judul besar menggunakan font 'Bebas Neue'
-  - Tag-tag Netflix-style di bagian bawah
-
-- **Konten Informatif**:
-  - Menggunakan grid untuk layout responsif
-  - Kartu fitur dengan ikon dan efek hover
-
-Fitur CSS utama:
-
-- Penggunaan flexbox untuk centering konten
-- Box-shadow untuk efek elevasi pada kartu
-- Transisi smooth pada hover efek
-
-### 3. Halaman Kontak
-
-![alt text](images/tampilan/kontak.png)
-
-Halaman kontak menyediakan cara bagi pengunjung untuk menghubungi tim Kuliner Nusantara:
-
-- **Form Kontak**:
-
-  - Input fields dengan styling konsisten
-  - Validasi form menggunakan HTML5 dan JavaScript
-  - Tombol submit dengan efek hover
-
-- **Informasi Kontak**:
-  - Layout grid untuk menampilkan berbagai informasi kontak
-  - Ikon untuk visualisasi informasi
-
-Fitur CSS utama:
-
-- Custom styling untuk form elements
-- Penggunaan `:focus` pseudo-class untuk meningkatkan aksesibilitas
-- Responsivitas menggunakan media queries
-
-### 4. Halaman Daftar Makanan dan Minuman
-
+### 2. Halaman Makanan Tradisional
 ![alt text](images/tampilan/makananview.png)
+- **Header Section**
+  - Judul "Makanan Tradisional"
+  - Tombol "+ TAMBAH MAKANAN" di pojok kanan atas
+  
+- **Content Section**
+  - Menampilkan grid makanan tradisional (5 items per baris)
+  - Setiap card makanan memiliki:
+    - Gambar makanan dengan aspect ratio 1:1
+    - Nama makanan (contoh: Nasi Lengko, Rendang, Rawon, dll)
+    - Label daerah asal (contoh: Cirebon, Minang, Ponorogo)
+    - Tombol "EDIT" dan "HAPUS"
+  - Total makanan ditampilkan di bagian bawah
+
+- **Fitur Interaktif**
+  - Hover effect pada card makanan
+  - Konfirmasi sebelum menghapus data
+  - Form modal untuk edit dan tambah data
+
+### 3. Halaman Minuman Tradisional
 ![alt text](images/tampilan/minumanview.png)
+- **Header Section**
+  - Judul "Minuman Tradisional"
+  - Tombol "+ TAMBAH MINUMAN" di pojok kanan atas
+  
+- **Content Section**
+  - Grid minuman tradisional (5 items per baris)
+  - Setiap card minuman memiliki:
+    - Gambar minuman dengan aspect ratio 1:1
+    - Nama minuman (contoh: Es Cendol, Wedang Ronde, Es Pisang Ijo)
+    - Label daerah asal (contoh: Jawa, Yogyakarta, Makassar)
+    - Tombol "EDIT" dan "HAPUS"
+  - Total minuman ditampilkan di bagian bawah
 
-Menampilkan daftar makanan dan minuman tradisional dari database:
+- **Fitur Interaktif**
+  - Hover effect pada card minuman
+  - Konfirmasi sebelum menghapus data
+  - Form modal untuk edit dan tambah data
 
-- **Grid Layout**:
+### 4. Halaman About
+![alt text](images/tampilan/about.png)
+- **Header Section**
+  - Judul "About Us"
+  - Subtitle: "Menjelajahi Kekayaan Kuliner Tradisional Indonesia"
 
-  - Menggunakan CSS Grid dengan auto-fill untuk layout responsif
-  - Gap antara item grid untuk spacing yang konsisten
+- **Visi & Misi Section**
+  - **Visi Kami:**
+    - Text lengkap visi organisasi
+    - Komitmen untuk melestarikan kuliner tradisional
+  
+  - **Misi Kami:**
+    - Mendokumentasikan resep makanan dan minuman tradisional
+    - Memperkenalkan keanekaragaman kuliner daerah
+    - Mendukung pelestarian warisan kuliner Indonesia
+    - Mengedukasi masyarakat tentang nilai budaya kuliner
 
-- **Kartu Konten**:
+- **Tim Section**
+  - Profil tim pengembang
+  - Link ke Github dan Instagram
 
-  - Efek hover dengan transformasi scale dan box-shadow
-  - Gambar dengan `object-fit: cover` untuk konsistensi tampilan
+### 5. Halaman Contact
+![alt text](images/tampilan/kontak.png)
+- **Header Section**
+  - Judul "Hubungi Kami"
+  - Deskripsi singkat tentang tujuan halaman kontak
 
-- **Tombol Aksi**:
-  - Styling konsisten untuk tombol edit dan hapus
-  - Efek hover untuk feedback visual
+- **Informasi Kontak**
+  - Lokasi lengkap: Jl. Kuliner Nusantara No. 123, Cikarang
+  - Nomor telepon: +62 812-9869-2950
+  - Email: faiz.maulana1405@gmail.com
 
-Fitur CSS utama:
+- **Form Kontak**
+  - Field input:
+    - Nama Lengkap (required)
+    - Email (required, dengan validasi format)
+    - Subjek
+    - Pesan (textarea)
+  - Tombol "KIRIM PESAN" dengan efek hover
+  
+- **Social Media**
+  - Icon dan link ke:
+    - Instagram
+    - Facebook
+    - Twitter
+    - YouTube
+  - Hover effect pada icon social media
 
-- Grid template columns dengan minmax untuk responsivitas
-- Transition pada hover effects untuk animasi smooth
-- Penggunaan variabel CSS untuk konsistensi warna
-
-### 5. Halaman Tambah dan Edit
-
-## Halaman Tambah
-
+### 6. Form Tambah/Edit Data
 ![alt text](images/tampilan/addmakanan.png)
-
-## Halaman edit/update
-
 ![alt text](images/tampilan/editminuman.png)
+- **Tambah Makanan/Minuman**
+  - Form input untuk data baru:
+    - Nama Makanan/Minuman (required)
+    - Daerah Asal (required)
+  - Tombol:
+    - "SIMPAN" - menyimpan data ke database
+    - "BATAL" - membatalkan input
 
-Form untuk menambahkan atau mengedit data makanan dan minuman:
+- **Edit Makanan/Minuman**
+  - Form yang sudah terisi dengan data existing
+  - Validasi input sebelum update
+  - Konfirmasi sebelum menyimpan perubahan
 
-- **Form Layout**:
-
-  - Struktur form yang konsisten dengan styling Netflix
-  - Label dan input yang jelas dan mudah dibaca
-
-- **Validasi Form**:
-
-  - Menggunakan atribut HTML5 seperti required
-  - Custom validasi JavaScript
-
-- **Tombol Aksi**:
-  - Styling konsisten dengan halaman lain
-  - Penempatan yang intuitif (cancel di kiri, submit di kanan)
-
-Fitur CSS utama:
-
-- Custom styling untuk form inputs
-- Penggunaan `:focus` pseudo-class untuk accessibility
-- Flexbox untuk layout tombol
-
-### 6. Halaman 404 (404.php)
-
+### 7. Halaman 404 (Error Page)
 ![alt text](images/tampilan/404.png)
+- **Error Message**
+  - Angka "404" yang besar
+  - Pesan "Menu Tidak Ditemukan"
+  - Deskripsi: "Waduh! Sepertinya menu yang Anda cari belum ada di daftar makanan dan minuman web kami. Yuk kembali ke halaman utama untuk melihat-lihat menu lainnya!"
+  
+- **Navigation**
+  - Tombol "KEMBALI KE MENU"
+  - Link ke halaman utama
 
-Halaman error custom dengan tema Kuliner Nusantara:
+## Spesifikasi Teknis
 
-- **Layout Sentris**:
+### Frontend
+- **HTML5**
+  - Semantic HTML elements
+  - Responsive meta tags
+  - Form validation
+  
+- **CSS3**
+  - Flexbox dan Grid layout
+  - Custom properties
+  - Media queries untuk responsive design
+  - Animations dan transitions
+  
+- **JavaScript**
+  - DOM manipulation
+  - Event handling
+  - Form validation
+  - AJAX requests
 
-  - Menggunakan flexbox untuk centering konten vertikal dan horizontal
+### Backend
+- **PHP**
+  - Object-Oriented Programming
+  - Database connection handling
+  - CRUD operations
+  - Form processing
+  
+- **MySQL Database**
+  - Tabel untuk makanan dan minuman
+  - Relational database design
+  - Optimized queries
 
-- **Tipografi Menarik**:
+### Fitur Keamanan
+- Input validation
+- SQL injection prevention
+- XSS protection
+- CSRF protection
 
-  - Kode error besar dengan efek bayangan teks
-  - Judul dan pesan error yang ramah pengguna
+## Fitur Utama
+1. **Manajemen Data Kuliner**
+   - Create: Tambah makanan dan minuman baru
+   - Read: Tampilkan semua data kuliner
+   - Update: Edit informasi kuliner
+   - Delete: Hapus data kuliner
 
-- **Gambar Tematik**:
+2. **User Interface**
+   - Responsive design untuk semua ukuran layar
+   - Intuitive navigation
+   - Interactive elements
+   - Clean dan modern design
 
-  - Gambar makanan Indonesia yang ditampilkan dalam bentuk lingkaran
-  - Menggunakan box-shadow untuk efek elevasi
+3. **Sistem Kategori**
+   - Pembagian makanan dan minuman
+   - Kategorisasi berdasarkan daerah asal
 
-- **Tombol Kembali**:
-  - Styling konsisten dengan tema Netflix
-  - Efek hover untuk feedback interaktif
+4. **Form Kontak**
+   - Input validation
+   - Email notification
+   - Response feedback
+
 
 Fitur CSS utama:
 
@@ -191,3 +224,13 @@ Fitur CSS utama:
 - JavaScript (ES6+)
 - Font Awesome untuk ikon
 - Google Fonts (Bebas Neue dan Poppins)
+
+## Kontributor
+- **Nama**          : Faiz Maulana   
+- **NIM**           : 312310469
+- **Kelas**         : TI.23.A5
+- **Mata Kuliah**   : Pemrograman Web 1
+- **Dosen Pengampu**: Eko Budiarto, S.Kom., M.M.
+
+## Lisensi
+© 2025 Kuliner Nusantara. All rights reserved.
